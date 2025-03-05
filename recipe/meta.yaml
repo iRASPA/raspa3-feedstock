@@ -26,11 +26,12 @@ requirements:
     - llvm-openmp
     - libcxx  # [win]
     - libcxx-devel  # [not win]
+    - libcblas
   host:
     - libcxx
     - libcxxabi  # [linux]
-    - blas
-    - lapack
+    - libblas
+    - liblapack
     - libopenblas  # [linux]
     - hdf5
     - zlib
