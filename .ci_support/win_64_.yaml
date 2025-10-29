@@ -23,7 +23,7 @@ liblapack:
 microarch_level:
 - '1'
 openssl:
-- '3'
+- '3.5'
 target_platform:
 - win-64
 zlib:
