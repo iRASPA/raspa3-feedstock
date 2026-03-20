@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/iRASPA/RASPA3/archive/v{{ version }}.tar.gz
-  sha256: a7e8c3813ff4e08e9f366bcf51a6cf629fdf02a75774499554b9989c5652d26a
+  sha256: 30ea3349b4252d26c8a604fed3edd9f2847c25dafc1888fb007475b7f5ef06fa
 
 build:
   # Prioritize builds with a higher microarch level.
@@ -20,7 +20,7 @@ build:
 requirements:
   build:
     - x86_64-microarch-level {{ microarch_level }}  # [unix and x86_64]
-    - {{ compiler('c') }}
+    - {{ stdlib('c') }}
     - {{ compiler('cxx') }}
     - clang-tools  # [osx]
     - llvm-tools  # [osx]
