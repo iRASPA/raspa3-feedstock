@@ -24,7 +24,7 @@ requirements:
     - {{ compiler('cxx') }}
     - clang-tools  # [osx]
     - llvm-tools  # [osx]
-    - lld  # [osx]
+    - lld  # [unix]
     - libcxx-devel  # [osx]
     - cmake
     - ninja
